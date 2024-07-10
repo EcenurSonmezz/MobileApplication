@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Ana Sayfa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="home-wrapper">
+    <div class="section header-section">
+      <ion-avatar>
+        <img src="/assets/login.png" alt="Profile Picture">
+      </ion-avatar>
+      <h2>Merhaba</h2>
+      <h3>Ben <span class="gradient-text">ECENUR</span> SÖNMEZ</h3>
+    </div>
+
+    <div class="section upgrade-section">
+      <div class="upgrade-card">
+        <img src="/assets/loginheader.png" alt="Cloud Image">
+        <div class="upgrade-content">
+          <h4>Bu Proje</h4>
+          <p>Ecenur Sönmez </p>
+          <p> Tarafından yapılmıştır</p>
+          <ion-button (click)="openLink()">Daha Fazlası</ion-button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section categories-section">
+      <div class="category">
+        <ion-icon name="image-outline"></ion-icon>
+        <p>Picture</p>
+        <p>896 items</p>
+      </div>
+      <div class="category">
+        <ion-icon name="videocam-outline"></ion-icon>
+        <p>Video</p>
+        <p>0 items</p>
+      </div>
+      <div class="category">
+        <ion-icon name="document-outline"></ion-icon>
+        <p>File</p>
+        <p>289 items</p>
+      </div>
+    </div>
+
+    <div class="section recents-section">
+      <h4>Proje İçeriği</h4>
+      <ion-list>
+        <ion-item>
+          <ion-icon slot="start" name="folder-outline"></ion-icon>
+          <ion-label>
+            <h2>Ionic</h2>
+            <p>Bu bir ionic mobil uygulamasıdır.</p>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="folder-outline"></ion-icon>
+          <ion-label>
+            <h2>TypeScript</h2>
+            <p>Typescript dili kullanıldı.</p>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="folder-outline"></ion-icon>
+          <ion-label>
+            <h2>scss</h2>
+            <p>scss kullanıldı.</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="footer-content">
+      <p>&copy; 2024 Ecenur Sönmez. 22380101064</p>
+      <p>
+        İletişimde Kalalım:
+        <a href="https://github.com/EcenurSonmezz" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/ecenur-sönmez-984288310" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </p>
+    </div>
+  </ion-toolbar>
+</ion-footer>

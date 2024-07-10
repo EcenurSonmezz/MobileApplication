@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/welcome"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="register-wrapper">
+    <div class="register-container">
+      <h2>Hesap Oluştur</h2>
+      <p>Hemen Aramıza Katıl</p>
+      <form (ngSubmit)="register()">
+        <ion-item>
+          <ion-label position="floating">Kullanıcı Adı</ion-label>
+          <ion-input type="text" [(ngModel)]="email" name="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Şifre</ion-label>
+          <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Şifreyi Yeniden Girin</ion-label>
+          <ion-input type="password" [(ngModel)]="confirmPassword" name="confirmPassword"></ion-input>
+        </ion-item>
+        <ion-button expand="block" type="submit" class="custom-button">Kaydol</ion-button>
+      </form>
+      <p class="login-prompt">
+        Zaten Bir Hesabın Var Mı? <a routerLink="/login">Giriş Yap</a>
+      </p>
+    </div>
+    <div class="register-image">
+      <!-- Buraya resim gelecek -->
+      <img src="/assets/registerheader.png" alt="Register Image">
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,160 @@
+ion-content {
+  --background: white;
+  position: relative;
+}
+
+.top-background {
+  width: 100%;
+  height: 200px; /* İstediğiniz yüksekliği ayarlayın */
+  background-image: url('/assets/header.png');
+  background-size: 250%; /* Resmi daha büyük yapar */
+  background-position: center; /* Resmi merkezler */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: slideInDown 1s ease-out forwards;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 0px; /* Arka plan resmi ile uyumlu hale getirin */
+  animation: fadeIn 2s ease-in forwards; /* Animasyon ekleme */
+}
+.content-container {
+  position: relative;
+  background-color:#f8f8ff; /* Yarı saydam beyaz arka plan */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 15px; /* Alt kısımda boşluk bırak */
+  animation: fadeInUp 1.5s ease-in forwards; /* Animasyon ekleme */
+}
+
+.content-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(10px); /* Bulanıklık efekti */
+  z-index: -1;
+  border-radius: 10px;
+}
+.page-header h1 {
+  margin-top: 0;
+  font-size: 2em;
+  color: #000;
+}
+
+.page-header p {
+  font-size: 1em;
+  color: gray;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.main-button {
+  width: 45%;
+  animation: bounceIn 1s ease-in forwards; /* Animasyon ekleme */
+}
+
+.outline {
+  --background: transparent;
+  --border-color: black;
+  --border-width: 1px;
+  --color: black;
+  animation: bounceIn 1.2s ease-in forwards; /* Animasyon ekleme */
+}
+
+.bottom-image {
+  width: 500%;
+  max-width: 600px; /* İstediğiniz maksimum genişliği ayarlayın */
+  margin-top: 20px; /* Üst kısımdan boşluk bırak */
+  margin-bottom: -100px;
+  animation: swing 3s ease-in-out infinite; /* Animasyon ekleme */
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

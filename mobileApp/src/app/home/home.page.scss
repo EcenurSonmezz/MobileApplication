@@ -1,0 +1,231 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+ion-content {
+  --background: #f5f7fa;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.home-wrapper {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.header-section h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.header-section h3 {
+  font-size: 18px;
+  color: #666;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #ff69b4, #dda0dd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientMove 2s linear infinite;
+}
+
+.upgrade-section {
+  background: linear-gradient(135deg, #4f94cd, #5cacee);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.upgrade-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-in-out;
+  transition: transform 0.5s;
+}
+
+.upgrade-card:hover {
+  animation: moveUpDown 0.5s ease-in-out;
+}
+
+.upgrade-card img {
+  width: 130px;
+  height: 150px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.upgrade-content {
+  text-align: left;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.upgrade-content h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.upgrade-content p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.categories-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.category {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-in-out;
+  transition: transform 0.5s;
+}
+
+.category:hover {
+  animation: moveUpDown 0.5s ease-in-out;
+}
+
+.category ion-icon {
+  font-size: 24px;
+  color: #4f94cd;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.category p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.recents-section {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.recents-section h4 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+ion-item {
+  --background: white;
+  --border-radius: 0px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  animation: slideIn 1s ease-in-out;
+  transition: transform 0.5s;
+}
+
+ion-item:hover {
+  animation: moveUpDown 0.5s ease-in-out;
+}
+
+ion-footer {
+  --background: #4f94cd;
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.footer-content p {
+  margin: 0px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.footer-content a {
+  color: black;
+  margin: 0 0px;
+  font-size: 20px;
+  text-decoration: none;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.footer-content ion-icon {
+  vertical-align: middle;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+ion-button:active {
+  background-color: #ff69b4; 
+  color: white; 
+}

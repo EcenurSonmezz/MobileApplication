@@ -1,0 +1,150 @@
+ion-content {
+    --background: #4b73ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+  }
+  
+  .login-wrapper {
+    background: #ffffff;
+    border-radius: 50px; /* Kenar kıvrımını arttırma */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 65px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .login-image img {
+    width: 100%;
+    border-top-left-radius: 50px; /* Kenar kıvrımını arttırma */
+    border-top-right-radius: 50px; /* Kenar kıvrımını arttırma */
+    animation: slideInDown 1.5s ease-out;
+  }
+  
+  .login-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 50px; /* Kenar kıvrımını arttırma */
+    margin-top: -20px;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #4b73ff;
+    animation: fadeInLeft 1.5s ease-in-out;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #4b73ff;
+    margin-bottom: 20px;
+    animation: fadeInRight 1.5s ease-in-out;
+  }
+  
+  ion-item {
+    --background: #fff;
+    --border-radius: 10px;
+    margin-bottom: 15px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #4b73ff;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .custom-button {
+    --border-radius: 20px;
+    --padding-start: 10px;
+    --padding-end: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    background: #1e1e2c;
+    color: #fff;
+    animation: bounceIn 1.5s ease-in-out;
+  }
+  
+  .signup-prompt {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #4b73ff;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  /* Animasyon tanımlamaları */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounceIn {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
